@@ -1,3 +1,7 @@
+# Import code from src folder
+import sys
+sys.path.append("../src")
+
 from meauriga import *
 
 if __name__ == '__main__':

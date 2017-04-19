@@ -63,7 +63,7 @@ A9 = 22
 A10 = 23
 A11 = 24
 
-class MegaPi():
+class MeAuriga():
     def __init__(self):
         print "init MegaPi"
         signal.signal(signal.SIGINT, self.exit)
@@ -182,9 +182,9 @@ class MegaPi():
 
     def gyroRead(self,axis,callback):
         self.__writeRequestPackage(6,axis,callback)
-
-	def pressureSensorBegin(self):
-        self.__writePackage(bytearray([0xff,0x55,0x3,0x0,0x2,29]))
+#
+#	def pressureSensorBegin(self):
+#        self.__writePackage(bytearray([0xff,0x55,0x3,0x0,0x2,29]))
 		
     def pressureSensorRead(self,type,callback):
         self.__writeRequestPackage(29,type,callback)
