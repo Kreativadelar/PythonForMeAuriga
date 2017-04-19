@@ -6,7 +6,7 @@
  
  * Insert the initial code for starting MegaPi first.
 ```
- from megapi import *
+ from meauriga import *
  bot = MeAuriga()
  bot.start()
  ```
