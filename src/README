@@ -1,0 +1,93 @@
+# Python For Me Auriga
+## How To Use
+ * Compile and upload the Firmware to MeAuriga
+ * On your Raspberry Pi, 
+ ```
+ 
+ * Insert the initial code for starting MegaPi first.
+```
+ from megapi import *
+ bot = MeAuriga()
+ bot.start()
+ ```
+ * python your code
+
+## Python API
+ * Start
+ 	* **MeAuriga**()
+ 	* **start**()
+ 	
+ * GPIO
+ 	* *Not tested* **digitalWrite**( pin, level )
+ 	* *Not tested* **pwmWrite**( pin, pwm )
+ 	* *Not tested* **digitalRead**( pin, **def** onResult )
+ 	* *Not tested* **analogRead**( pin, **def** onResult )
+ 	
+ * Motion
+	* DC Motor
+	  * *Not tested* **dcMotorRun**( port, speed )
+	* Servo Motor
+	  * *Not tested* **servoRun**( port, angle )
+	* Encoder Motor
+	  * *Not tested* **encoderMotorRun**( port, speed )
+	  * *Not tested* **encoderMotorMove**( port, speed, distance, **def** onFinish )
+	  * *Not tested* **encoderMotorMoveTo**( port, speed, position, **def** onFinish )
+	* Stepper Motor
+	  * *Not tested* **stepperMotorSetting**( port, microsteps, acceleration )
+	  * *Not tested* **stepperMotorRun**( port, speed )
+	  * *Not tested* **stepperMotorMove**( port, speed, distance, **def** onFinish )
+	  * *Not tested* **stepperMotorMoveTo**( port, speed, position, **def** onFinish )
+	  
+ * Sensors
+ 	* Ultrasonic Sensor
+ 	  * **ultrasonicSensorRead** ( port, **def** onResult ) 
+ 	* LineFollow Sensor
+ 	  * *Not tested* **lineFollowerRead** ( port, **def** onResult ) 
+ 	* Light Sensor
+ 	  * *Not tested* **lightSensorRead** ( port, **def** onResult ) 
+ 	* Sound Sensor
+ 	  * *Not tested* **soundSensorRead** ( port, **def** onResult ) 
+ 	* Temperature Sensor
+ 	  * *Not tested* **temperatureRead** ( port, **def** onResult ) 
+ 	* PIR Motion Sensor
+ 	  * *Not tested* **pirMotionSensorRead** ( port, **def** onResult ) 
+ 	* Touch Sensor
+ 	  * *Not tested* **touchSensorRead** ( port, **def** onResult ) 
+ 	* LimitSwitch
+ 	  * *Not tested* **limitSwitchRead** ( port, slot, **def** onResult ) 
+ 	* Humiture Sensor
+ 	  * *Not tested* **humitureSensorRead** ( port, type, **def** onResult ) 
+ 	* Gas Sensor
+ 	  * *Not tested* **gasSensorRead** ( port, **def** onResult )
+ 	* Flame Sensor
+ 	  * *Not tested* **flameSensorRead** ( port, **def** onResult ) 
+ 	* Button
+ 	  * *Not tested* **buttonRead** ( port, **def** onResult ) 
+ 	* Potentiometer
+ 	  * *Not tested* **potentiometerRead** ( port, **def** onResult )
+ 	* Joystick
+ 	  * *Not tested* **joystickRead** ( port, axis, **def** onResult )
+ 	* 3-Axis Accelerometer and Gyro Sensor
+ 	  * *Not tested* **gyroRead** ( axis, **def** onResult )
+ 	* Compass
+ 	  * *Not tested* **compassRead** ( **def** onResult )
+ 	
+ * Display
+ 	* RGB Led
+ 	  * **rgbLedSetColor** ( port, slot, index, r, g, b )
+ 	  * **rgbLedShow** ( port, slot )
+ 	  * **rgbLedDisplay** ( port, slot, index, r, g, b )
+ 	* 7-segment Display
+ 	  * *Not tested* **sevenSegmentDisplay** ( port, value )
+ 	* Led Matrix Display
+ 	  * *Not tested* **ledMatrixDisplayMessage** ( port, x, y, msg )
+ 	  * *Not tested* **ledMatrixDisplayRaw** ( port, buffer )
+ 	* Serial LCD Display
+ 	  * *Not tested* **lcdDisplay** ( string )
+ 	  
+ * Others
+ 	* DSLR Shutter
+	  * *Not tested* **shutterOn** ( port )
+	  * *Not tested* **shutterOff** ( port )
+	  * *Not tested* **focusOn** ( port )
+	  * *Not tested* **focusOff** ( port )
