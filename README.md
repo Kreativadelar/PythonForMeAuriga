@@ -2,9 +2,9 @@
 
 This is a port of the PythonForMegaPi Python librari to work with Me Auriga
 
-To install library 
-
-python setup.py install
+## To install library 
+* http://www.stuffaboutcode.com/2012/10/raspberry-pi-python-installing-modules.html
+* python setup.py install
 
 ## How To Use
 ### Prepare for Arduino
