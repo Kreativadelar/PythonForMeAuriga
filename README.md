@@ -2,7 +2,9 @@
 
 This is a port of the PythonForMegaPi Python librari to work with Me Auriga
 
-### OBS! The future developing is done in https://github.com/Kreativadelar/PythonForMeAuriga repo ###
+To install library 
+
+python setup.py install
 
 ## How To Use
 ### Prepare for Arduino
