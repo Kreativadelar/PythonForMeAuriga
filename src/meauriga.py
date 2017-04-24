@@ -65,7 +65,7 @@ A11 = 24
 
 class MeAuriga():
     def __init__(self):
-        print "init MegaPi"
+        print "init MeAuriga"
         signal.signal(signal.SIGINT, self.exit)
         self.manager = Manager()
         self.__selectors = self.manager.dict()
